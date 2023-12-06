@@ -1,0 +1,84 @@
+body {
+  font-family: "Roboto Mono", monospace;
+  background: #e3f6f5;
+}
+h1 {
+  font-size: 40px;
+  color: #272343;
+}
+main p {
+  font-size: 17px;
+  margin-bottom: 35px;
+  font-weight: 350;
+}
+strong {
+  color: #272343;
+}
+
+footer p {
+  font-size: 15px;
+  font-weight: 200;
+}
+
+.searchImput {
+  background: #e3f6f5;
+  padding: 15px;
+  width: 75%;
+  border: 1px solid #e3f6f5;
+  font-size: 15px;
+  margin-bottom: 30px;
+}
+.searchButtom {
+  color: #272343;
+  background: #bae8e8;
+  border: 1px solid #bae8e8;
+  border-radius: 10px;
+  padding: 15px;
+  font-size: 15px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.08);
+}
+.searchButtom:hover {
+  cursor: pointer;
+}
+
+.current-weather {
+  display: flex;
+  justify-content: space-between;
+  color: #272343;
+}
+
+div .current-temperature {
+  position: relative;
+  top: 25px;
+  font-size: 35px;
+}
+.icon {
+  position: relative;
+  top: -15px;
+  right: -4px;
+  font-size: 31px;
+}
+
+.temperature-value {
+  position: relative;
+  top: -10px;
+  right: 8px;
+  font-size: 89px;
+  font-weight: bold;
+}
+
+.temperature-unit {
+  font-size: 19px;
+  position: relative;
+  top: -57px;
+  right: 37px;
+}
+
+.weatherApp {
+  background: white;
+  max-width: 600px;
+  margin: 110px auto;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
+}
