@@ -1,8 +1,6 @@
 function changeCity(event) {
   event.preventDefault();
   let cityValue = document.querySelector("#city-imput");
-  let head = document.querySelector(`h1`);
-  head.innerHTML = `${cityValue.value}`;
   let apiKey = "ab14t46ca824c44f19c53892o77f5c04";
   let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${cityValue.value}&key=${apiKey}`;
   axios.get(apiUrl).then(displayTemperature);
@@ -11,6 +9,9 @@ function changeCity(event) {
 function displayTemperature(response) {
   let temperature = Math.round(response.data.temperature.current);
   let temperatureElement = document.querySelector("#temperature-value");
+  let city = document.querySelector("h1");
+
+  city.innerHTML = response.data.city;
 
   temperatureElement.innerHTML = `${temperature}`;
 }
